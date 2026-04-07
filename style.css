@@ -3,6 +3,8 @@ body {
     font-family: 'Poppins', arial black;
     background: linear-gradient(135deg, #000000, #111111);
     color: #ffffff;
+
+    background-img:src""
 }
 
 header {
