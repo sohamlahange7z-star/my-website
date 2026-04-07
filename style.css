@@ -1,10 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
 body {
+    font-family: Arial, sans-serif;
+    color: white;
     background: 
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
         url("Saved Pictures/neon.jpg");
     background-size: cover;
     background-position: center;
 }
+
+/* HEADER */
 header {
     text-align: center;
     padding: 40px;
@@ -12,78 +23,60 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #f5f5f5;
+    color: white;
 }
 
 header p {
-    color: #aaaaaa;
+    color: #cccccc;
 }
 
 /* GRID */
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    gap: 20px;
     padding: 20px;
 }
 
-/* CARDS */
+/* CARD */
 .card {
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    transition: 0.4s;
-
- 
+    transition: 0.3s;
 }
-   .card img {
+
+/* IMAGE */
+.card img {
     width: 100%;
-    height: 300px;
-    object-fit: cover; /* makes it look like insta */
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
 }
-/* HOVER EFFECT */
+
+/* HOVER */
 .card:hover {
-    transform: translateY(-10px);
-    background: rgba(255,255,255,0.08);
-    box-shadow: 0 0 25px rgba(255,255,255,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
-
-
 
 /* BUTTON */
 button {
-    background: #ffffff;
-    color: #000000;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
-    padding: 12px;
-    cursor: pointer;
     border-radius: 10px;
+    background: white;
+    color: black;
+    cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 button:hover {
     background: #dddddd;
-}
-
-/* INPUTS */
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: none;
-    background: #111;
-    color: white;
-}
-
-/* SPECIAL CARDS */
-.special {
-    border: 1px solid #ffffff;
 }
 
 /* FOOTER */
